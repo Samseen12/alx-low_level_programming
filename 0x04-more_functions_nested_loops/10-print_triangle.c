@@ -2,9 +2,10 @@
 
 /**
  * main - prints Buzz each numbers of 3 and 5.
- * Return: Always 0.
+ * @size: size of the triangle
+ * Return: triangle of '#'s
  */
-int main(void)
+void print_triangle(int size)
 {
 	int sp, ro, tr;
 
