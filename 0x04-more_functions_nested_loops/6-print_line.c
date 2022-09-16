@@ -7,18 +7,12 @@
  */
 void print_line(int n)
 {
-	int co;
+	int i;
 
-	if (n <= 0)
+	for (i = 0; i < n; i++)
 	{
-		_putchar('\n');
+		_putchar(95);
 	}
-	else
-	{
-		for (co = 1; co <= n; co++)
-		{
-			_putchar('_');
-		}
+
 		_putchar('\n');
-	}
 }
