@@ -1,31 +1,22 @@
 #include "main.h"
 
 /**
- * main - prints Buzz each numbers of 3 and 5.
- * @size: size of the triangle
- * Return: triangle of '#'s
+ * print_triangle - prints a triangle.
+ * @size: numbers of lines.
+ * Return: no return.
  */
 void print_triangle(int size)
 {
-	int sp, ro, tr;
+	int i, j;
 
-	if (size <= 0)
+	for (i = 0; i < size; i++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (ro = 0; ro <= (size - 1); ro++)
-		{
-			for (sp = 0; sp < (size - 1) - ro; sp++)
-			{
-				putchar(' ');
-			}
-			for (tr = 0; tr <= ro; tr++)
-			{
-				_putchar('#');
-			}
+		for (j = 1; j < (size - i); j++)
+			_putchar(' ');
+		for (j--; j < size; j++)
+			_putchar(35);
+		if (i < (size - 1))
 			_putchar('\n');
-		}
 	}
+	_putchar('\n');
 }
