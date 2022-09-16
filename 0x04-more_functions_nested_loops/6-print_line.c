@@ -2,7 +2,7 @@
 
 /**
  * print_line - a function that draws a straight line in the terminal
- * input number of times to print '_'
+ * @n: times straight line is printed.
  * Return: a straight line
  */
 void print_line(int n)
@@ -13,6 +13,5 @@ void print_line(int n)
 	{
 		_putchar(95);
 	}
-
-		_putchar('\n');
+	_putchar('\n');
 }
